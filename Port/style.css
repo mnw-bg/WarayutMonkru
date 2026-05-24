@@ -103,7 +103,7 @@ section {
     .profiili_section{
         flex-direction: column-reverse;
         text-align: center;
-        min-height: auto;
+        min-height: 700;
     }
     .profiili-content h1{
         font-size: 2.5rem;
@@ -173,7 +173,7 @@ h2 {
 }
 
 .tyo-kuva{
-    width:50%;
+    width:100%;
     display:flex;
     overflow-x:scroll;
     scroll-snap-type:x mandatory;
