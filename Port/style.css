@@ -151,17 +151,9 @@ h2 {
 
 /*---------------------------------------------------------------------------*/
 .tyo-section{
-    max-width: auto;
     background-color: #cbdce8;
     
 }
-.tyo{
-    border-radius: 10px;
-    background-color: #b6cade;
-}
-
-
-
 .tyo-kuva{
     width:70%;
     display:flex;
