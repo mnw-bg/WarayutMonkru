@@ -151,38 +151,28 @@ h2 {
 
 /*---------------------------------------------------------------------------*/
 .tyo-section{
-    max-width: 50%;
+    max-width: auto;
     background-color: #cbdce8;
+    
 }
 .tyo{
-    height:500px;
     border-radius: 10px;
-    border: solid;
-    overflow-y:scroll;
-    scroll-snap-type:y mandatory;
-    scroll-behavior: smooth;
     background-color: #b6cade;
 }
 
-.slide{
-    height:500px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:40px;
-}
+
 
 .tyo-kuva{
-    width:100%;
+    width:70%;
     display:flex;
+    
     overflow-x:scroll;
     scroll-snap-type:x mandatory;
-    scroll-behavior:smooth;
+
 }
 
 .tyo-kuva img{
     width:100%;
-    border-radius:20px;
 }
 
 .tyo-tiedot{
@@ -190,41 +180,7 @@ h2 {
     text-align: left;
     font-size: 1rem; 
 }
-.lataus{
-    padding: 10px;
-    text-align: center;
-}
-.lataus a{
-    border: solid black 1px;
-    border-radius: 10px;
-    padding: 5px;
-    text-decoration: none;
-    color: #ffffff;
-    background: #0b95e0;
-    
-}
-.lataus a:hover{
-    color: aqua;
-}
-@media(max-width:768px)
-{
-    .tyo-section{
-        max-width: 100%;
-    }
-    .tyo{
-        height: 750px;
-       
-    }
-    .slide{
-        height: auto;
-        flex-direction: column;
-        padding: 30px 15px;
-        gap: 20px;
-    }
-    .tyo-kuva{
-        width: 100%;
-    }
-}
+
 /*---------------------------------------------------------------------------*/
 .yhteystiedot-section {
     text-align: center;
