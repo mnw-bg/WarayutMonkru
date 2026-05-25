@@ -151,7 +151,7 @@ h2 {
 
 /*---------------------------------------------------------------------------*/
 .tyo-section{
-    max-width: 100%;
+    max-width: 50%;
     background-color: #cbdce8;
 }
 .tyo{
@@ -208,6 +208,9 @@ h2 {
 }
 @media(max-width:768px)
 {
+    .tyo-section{
+        max-width: 100%;
+    }
     .tyo{
         height: 750px;
        
