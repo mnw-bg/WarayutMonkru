@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_POST['csrf_token'], $_SESSION['csrf_token']) ||
+    !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
+    unset($_SESSION['csrf_token']);
+    die("CSRF-tunniste ei kelpaa!");
+}
+unset($_SESSION['csrf_token']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
