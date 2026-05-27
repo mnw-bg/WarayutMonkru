@@ -8,10 +8,11 @@
 </head>
 <body>
     <?php
-    function tarkistaSyote($nimi, $sahkoposti) {
+    function tarkistaSyote($nimi, $sahkoposti, $viesti) {
         //puhdistetaan syöte mahdollista HTML-erikoismerkkia
         $nimi = htmlspecialchars(trim($nimi));
         $sahkoposti = htmlspecialchars(trim($sahkoposti));
+        $viesti = htmlspecialchars(trim($viesti));
 
         if (strlen($nimi) > 100) return "Nimi on liian pitkä";
         if (!preg_match("/^[a-zA-ZäöåÄÖÅ\s-]+$/u", $nimi)) return "Virheellinen nimi!";
@@ -23,14 +24,17 @@
         
         return [
             'nimi' => $nimi,
-            'sahkoposti' => $sahkoposti
+            'sahkoposti' => $sahkoposti,
+            'viesti' => $viesti
         ];
     }
 
-    $tulos = tarkistaSyote($_POST['nimi'], $_POST['sahkoposti']);
+    $tulos = tarkistaSyote($_POST['nimi'], $_POST['sahkoposti'], $_POST['viesti']);
 
     if (is_array($tulos)) {
-        $rivi = date("Y-m-d H:i:s") . " | Nimi: {$tulos['nimi']} | Sähköposti: {$tulos['sahkoposti']}" . PHP_EOL;
+        $rivi = date("Y-m-d H:i:s") . " | Nimi: {$tulos['nimi']} | Sähköposti: {$tulos['sahkoposti']} 
+| Viesti:
+ {$tulos['viesti']}" . PHP_EOL;
         $tiedosto = 'tiedot.txt';
 
         if (file_put_contents($tiedosto, $rivi, FILE_APPEND | LOCK_EX)){
