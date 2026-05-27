@@ -162,7 +162,6 @@ h2 {
 .slide{
     align-items: center;
     gap: 30px;
-    display: flex;
     background-color: #ffffff;
     border-radius: 12px;
     border: 0.5px solid black;
@@ -201,7 +200,6 @@ h2 {
 
 /*---------------------------------------------------------------------------*/
 .yhteystiedot-section {
-    background-color: #011439;
     max-width: 100%;
     padding: 80px 40px;
     color: #ffffff;
@@ -209,7 +207,7 @@ h2 {
 
 .yhteystiedot-section h2 {
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     max-width: 1100px;
     margin: 0 auto 50px auto;
     font-size: 2rem;
@@ -243,12 +241,12 @@ h2 {
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 2px;
-    color: #888;
+    color: #000000;
 }
 
 .yh-rivi a {
     font-size: 1rem;
-    color: #ffffff;
+    color: #777676;
     text-decoration: none;
 }
 
