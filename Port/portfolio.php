@@ -20,8 +20,10 @@ $_SESSION['csrf_token'] = $csrf_token;
             <li><a href="#profiili">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#adjective">Adjective</a></li>
             <li><a href="#tyota">Projects</a></li>
             <li><a href="#YH">Contact</a></li>
+            
         </ul>
     </nav>
     <section id="profiili" class="profiili_section">
@@ -94,6 +96,27 @@ $_SESSION['csrf_token'] = $csrf_token;
                 </div>
             </div>
     </section>
+
+        <section id="adjective" class="skills_section">
+            <h2>Vahvuus</h2>
+            <div class="skills">
+
+                <div class="taito">
+                    <h3>Tavoitteellinen</h3>
+                    <p>Ahkera</p>
+                    <p>Sinnikäs</p>
+                    <p>Utelias</p>
+                </div>
+
+                <div class="taito">
+                    <h3>Huono</h3>
+                    <p>kärsimätön</p>
+                    <p>itsepäinen</p>
+                    <p>yliajatteleva</p>
+                </div>
+            </div>
+    </section>
+    
     <section class="tyo-section" id="tyota">
         
             <div class="slide">

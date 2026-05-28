@@ -7,6 +7,7 @@
     <title>tarkistus</title>
 </head>
 <body>
+    <div class="form">
     <?php
     function tarkistaSyote($nimi, $sahkoposti, $viesti) {
         //puhdistetaan syöte mahdollista HTML-erikoismerkkia
@@ -47,6 +48,8 @@
     else{
         echo "virhe: " . $tulos;
     }
-    ?>
+    ?><br>
+    <input type="submit" value="GET BACK">
+    </div>
 </body>
 </html>
