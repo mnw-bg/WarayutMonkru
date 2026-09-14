@@ -29,8 +29,9 @@ $_SESSION['csrf_token'] = $csrf_token;
     <section id="profiili" class="profiili_section">
             <div class="profiili-content">
                 <h1>Warayut Monkru</h1>
-                <p>18 vuotias</p>
+                <p>19 vuotias</p>
                 <p>Opiskelija</p>
+                <p>Tieto- ja viestintätekniikka</p>
 
                 <a href="#tyota" class="btn">Katso työni</a>
             </div>
@@ -43,7 +44,7 @@ $_SESSION['csrf_token'] = $csrf_token;
             <h2>Minusta</h2>
             <div class="about-container">
                 <p>
-                    Olen ensimmäisen vuoden ICT-opiskelija Savon ammattiopistossa
+                    Opiskelen ICT:n perustutkintoa Savon ammattiopistossa
                     ja olen kiinnostunut verkkokehityksestä sekä pelinkehityksestä. 
                     Haluan kehittää ohjelmointitaitojani ja oppia uusia teknologioita.
                 </p>
@@ -55,7 +56,7 @@ $_SESSION['csrf_token'] = $csrf_token;
 
                 <div class="taito">
                     <h3>HTML</h3>
-                    <p>HTML - Verkkosivujen rakenteen tekeminen ja sisällön rakentaminen.</p>
+                    <p>HTML - Verkkosivujen rakenteen tekeminen ja sisällön rakentaminen ja lomakkeiden luominen.</p>
                 </div>
 
                 <div class="taito">
@@ -75,13 +76,12 @@ $_SESSION['csrf_token'] = $csrf_token;
 
                 <div class="taito">
                     <h3>PHP</h3>
-                    <p>PHP - PHP-ohjelmoinnin perusteiden opiskelu verkkokehitystä varten.
-                    </p>
+                    <p>PHP - Perus asiat PHP-ohjelmoinnissa. lomakkeiden lähetys ja käsittely.</p>
                 </div>
                 <div class="taito">
                     <h3>VS code</h3>
                     <p>
-                        Monipuolinen koodieditori, jota käytän päivittäin HTML-,
+                        Monipuolinen koodieditori, jota käytän päivittäin HTML-, JS, 
                          CSS- ja PHP-projektien kehittämiseen
                     </p>
                 </div>
@@ -92,6 +92,17 @@ $_SESSION['csrf_token'] = $csrf_token;
                         monipuolinen kehitysympäristö (IDE), 
                         jota käytän C#-ohjelmoinnissa 
                         ja Windows Forms ohjelmoinissa.
+                    </p>
+                </div>
+
+                <div class="taito">
+                    <h3>SQL</h3>
+                    <p>
+                        <ul></ul>
+                            <li>SQL - Tietokantojen hallinta ja tietojen hakeminen.</li>
+                            <li>MySQL - Tietokannan luominen ja hallinta MySQL:llä.</li>
+                            <li>JSON - Tietojen siirto ja tallennus JSON-muodossa.</li>
+                        </ul>
                     </p>
                 </div>
             </div>
@@ -230,7 +241,7 @@ $_SESSION['csrf_token'] = $csrf_token;
             </div>
             <div class="yh-rivi">
                 <span class="yh-label">SIJAINTI</span>
-                <a href="https://maps.app.goo.gl/dMqadSZ1ECQD4A1L6">Kuopio, Suomi</a>
+                <p>Kuopio, Suomi</p>
             </div>
             <div class="yh-rivi">
                 <span class="yh-label">GITHUB</span>
