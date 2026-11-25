@@ -258,7 +258,7 @@ input:hover, textarea:hover{
     .profiili_section{
         flex-direction: column-reverse;
         text-align: center;
-        min-height: 700;
+        min-height: 700px;
     }
     .profiili-content h1{
         font-size: 2.5rem;
