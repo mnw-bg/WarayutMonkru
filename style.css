@@ -253,7 +253,7 @@ input:hover, textarea:hover{
     padding: 20px;
     font-size: 14px;
 }
-@media (max-width: 600px)
+@media (max-width: 768px)
 {
     .profiili_section{
         flex-direction: column-reverse;
