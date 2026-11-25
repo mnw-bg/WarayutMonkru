@@ -157,8 +157,7 @@ h2 {
     flex: 1.2;
     display:flex;
     gap: 8px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    overflow-y: auto;
     border-radius: 8px;
     background: #ffffff;
     padding: 8px;
@@ -168,9 +167,7 @@ h2 {
 }
 
 .tyo-kuva img{
-    width:auto;
-    scroll-snap-align: start;
-    width: 500px;
+    width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 6px;
@@ -268,6 +265,16 @@ input:hover, textarea:hover{
     }
     .navbar{
     flex-direction: column;
+    }
+    .tyo-kuva img{
+        width: 100%;
+        height: auto;
+    }
+    .skills{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    h2{
+        font-size: 1.5rem;
     }
 
 }
