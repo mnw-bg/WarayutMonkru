@@ -266,6 +266,11 @@ input:hover, textarea:hover{
     .navbar{
     flex-direction: column;
     }
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
     .tyo-kuva img{
         width: 100%;
         height: auto;
